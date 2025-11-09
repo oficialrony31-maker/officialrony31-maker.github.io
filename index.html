@@ -1,0 +1,91 @@
+<div class="container">
+    <h2>Selecciona un País</h2>
+    <p>Inspirado en interfaces de sitios como SMS-Activate, SMSPool y Tiger-SMS, donde se listan países con banderas para seleccionar números virtuales fácilmente.</p>
+    <div class="country-list">
+        <div class="country-item">
+            <div class="flag">🇺🇸</div>
+            <h3>Estados Unidos</h3>
+            <p>Precio: 0.0005 BTC (~$30 USD)</p>
+            <button onclick="showPayment('USA')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇪🇸</div>
+            <h3>España</h3>
+            <p>Precio: 0.0004 BTC (~$25 USD)</p>
+            <button onclick="showPayment('España')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇲🇽</div>
+            <h3>México</h3>
+            <p>Precio: 0.0003 BTC (~$20 USD)</p>
+            <button onclick="showPayment('México')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇦🇷</div>
+            <h3>Argentina</h3>
+            <p>Precio: 0.0003 BTC (~$20 USD)</p>
+            <button onclick="showPayment('Argentina')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇧🇷</div>
+            <h3>Brasil</h3>
+            <p>Precio: 0.0004 BTC (~$25 USD)</p>
+            <button onclick="showPayment('Brasil')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇨🇦</div>
+            <h3>Canadá</h3>
+            <p>Precio: 0.0005 BTC (~$30 USD)</p>
+            <button onclick="showPayment('Canadá')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇬🇧</div>
+            <h3>Reino Unido</h3>
+            <p>Precio: 0.0005 BTC (~$30 USD)</p>
+            <button onclick="showPayment('Reino Unido')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇩🇪</div>
+            <h3>Alemania</h3>
+            <p>Precio: 0.0004 BTC (~$25 USD)</p>
+            <button onclick="showPayment('Alemania')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇫🇷</div>
+            <h3>Francia</h3>
+            <p>Precio: 0.0004 BTC (~$25 USD)</p>
+            <button onclick="showPayment('Francia')">Comprar</button>
+        </div>
+        <div class="country-item">
+            <div class="flag">🇮🇳</div>
+            <h3>India</h3>
+            <p>Precio: 0.0002 BTC (~$15 USD)</p>
+            <button onclick="showPayment('India')">Comprar</button>
+        </div>
+    </div>
+
+    <div id="payment-info" class="payment" style="display: none;">
+        <h2>Instrucciones de Pago</h2>
+        <p>Para completar tu compra, envía el monto exacto en Bitcoin a la siguiente dirección desde tu wallet (como Trust Wallet o cualquier otra):</p>
+        <p><strong>Dirección BTC:</strong> bc1qedq7uuvhc8m2rmqzkqekd4cll3jh5mnajnst3f</p>
+        <p>Después de enviar, envíame el TXID (ID de transacción) por WhatsApp al +123456789.</p>
+        <p>Una vez confirmado (usualmente en 10-30 minutos), te enviaré el número virtual por el mismo medio.</p>
+        <ul>
+            <li>Asegúrate de usar la red Bitcoin (BTC), no otras criptos.</li>
+            <li>No envíes desde exchanges; usa una wallet personal para evitar fees extras.</li>
+            <li>El precio puede variar con el valor de BTC; verifica el monto actual antes de enviar.</li>
+        </ul>
+        <p><strong>Nota:</strong> Todos los pagos son finales y no reembolsables. Usa Trust Wallet para generar un QR si lo prefieres.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 VirtualNumbers Shop. Todos los derechos reservados. Pagos seguros en Bitcoin.</p>
+</footer>
+
+<script>
+    function showPayment(country) {
+        document.getElementById('payment-info').style.display = 'block';
+        alert('Selecciona número para ' + country + '. Procede al pago en Bitcoin.');
+    }
+</script>
